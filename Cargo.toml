@@ -1,0 +1,17 @@
+[package]
+authors = ["Andrii Radyk <ander.ender@gmail.com>"]
+name = "example"
+version = "0.1.0"
+
+[dependencies]
+rusoto_core = "0.32.0"
+rusoto_s3 = "0.32.0"
+rusoto_credential = "0.11.0"
+structopt = "0.2.8"
+failure = "0.1.1"
+futures = "0.1.21"
+indicatif = "0.9.0"
+
+[features]
+c = []
+#default = ["c"]
