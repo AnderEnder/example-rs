@@ -22,7 +22,7 @@ main() {
 
     # TODO Update this to package the right artifacts
     [ -f "target/$TARGET/release/${CRATE_NAME}" ] && cp target/$TARGET/release/${CRATE_NAME} $stage/
-    [ -f "target/$TARGET/release/${CRATE_NAME}.exe" ] && cp target/$TARGET/release/${CRATE_NAME} $stage/
+    [ -f "target/$TARGET/release/${CRATE_NAME}.exe" ] && cp target/$TARGET/release/${CRATE_NAME}.exe $stage/
 
     cd $stage
     tar czf $src/$CRATE_NAME-$TRAVIS_TAG-$TARGET.tar.gz *
